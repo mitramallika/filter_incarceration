@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body class="container">
+    <!-- YOUR CONTENT GOES HERE -->
+    <h1>How much does your county<br>contribute to mass incarceration?</h1>
+    <!-- Graph from datawrapper -->
+
+    <!-- <iframe title="New York State's Incarcerated Population [1970-2016]" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/NTh2y/1/" scrolling="no" frameborder="0" width="653" height="385"></iframe> -->
+
+    <!-- <img src="img/jail.jpg"></img> -->
+    <!-- <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption> -->
+    <p>Lorem ipsum dolor amet normcore affogato cardigan, tacos forage edison bulb selvage lyft dreamcatcher schlitz. Actually sartorial vice, af enamel pin intelligentsia normcore. Tote bag franzen flexitarian, roof party poke offal kombucha
+      schlitz vinyl ramps shabby chic salvia. Adaptogen neutra tattooed squid, four loko tbh dreamcatcher activated charcoal bicycle rights lumbersexual live-edge edison bulb. Everyday carry green juice jianbing wayfarers seitan cray.</p>
+
+    </div>
+
+    <h2>Select your county </h2>
+    <form>
+      <select id="character"></select>
+      <br><br>
+      <input id="enter" type="submit">
+    </form>
+
+    <div id="info">
+      <!-- templating occurs here -->
+      <script type="text/html" id="place_template">
+        <p>You selected <strong><%= place.county %></strong></p>
+        <p>Total county population: <strong><%= place.total_pop %></strong></p>
+        <p>Total prison population: <strong><%= place.total_prison_population %></strong></p>
+        <p>Black prison population: <strong><%= place.black_prison_pop %></strong></p>
+        <p>White prison population: <strong><%= place.white_prison_pop %></strong></p>
+        <p>Latino prison population: <strong><%= place.latin_prison_pop %></strong></p>
+        <p>Male prison population: <strong><%= place.male_prison_pop %></strong></p>
+        <p>Female prison population: <strong><%= place.female_prison_pop %></strong></p>
+        <p>Total county population: <strong><%= place.total_pop %></strong>.</p>
+      </script>
+
+    </div>
+
+    <script type="text/html" id="select_template">
+      <option value="<%= county %>"><%= county %></option>
+    </script>
+
+    <p>Hexagon pug fingerstache twee kinfolk four dollar toast food truck. Tumeric tattooed locavore four loko echo park meh health goth cold-pressed bicycle rights. Freegan vaporware succulents selfies, swag sriracha shaman. Photo booth seitan
+      next level pabst, YOLO retro fanny pack poutine succulents quinoa pinterest master cleanse. Green juice selfies prism austin.</p>
+    <p>Brunch forage bicycle rights squid meditation fingerstache pug migas health goth chicharrones letterpress four loko food truck street art brooklyn. Vegan craft beer four dollar toast dreamcatcher schlitz succulents, portland activated
+      charcoal semiotics offal meh disrupt leggings. </p>
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+    <!-- link to lodash cdn -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+
+    <!-- the main js file -->
+    <script src="main.js"></script>
+
+    <!-- link to data -->
+    <script src="data.js"></script>
+  </body>
+
+</html>
