@@ -8,9 +8,10 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 		$("#character").append(option_template({ county: place.county }));
 	});
 
-	$('#enter').on("click", function (e) {
-		e.preventDefault(); //disable the button's default behavior
-		// DO STUFF...
+	// $('#enter').on("click", function (e) {
+	// 	e.preventDefault(); //disable the button
+	$("body").on("keyup keydown keypress change", "select", function (e) {
+
 		places_name = $("#character").val();
 		result = _.find(data, { county: places_name });
 
