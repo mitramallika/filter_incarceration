@@ -30,10 +30,22 @@
     <h1>How much does your county<br>contribute to mass incarceration?</h1>
     <!-- Graph from datawrapper -->
 
-    <!-- <iframe title="New York State's Incarcerated Population [1970-2016]" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/NTh2y/1/" scrolling="no" frameborder="0" width="653" height="385"></iframe> -->
+    <iframe title="New York Jail and Prison Incarceration Rates" aria-label="Interactive line chart" id="datawrapper-chart-sAjvG" src="https://datawrapper.dwcdn.net/sAjvG/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;"
+      height="400"></iframe>
 
-    <!-- <img src="img/jail.jpg"></img> -->
-    <!-- <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption> -->
+    <script type="text/javascript">
+      ! function() {
+        "use strict";
+        window.addEventListener("message", function(a) {
+          if (void 0 !== a.data["datawrapper-height"])
+            for (var t in a.data["datawrapper-height"]) {
+              var e = document.getElementById("datawrapper-chart-" + t);
+              e && (e.style.height = a.data["datawrapper-height"][t] + "px")
+            }
+        })
+      }();
+    </script>
+
     <p>Lorem ipsum dolor amet normcore affogato cardigan, tacos forage edison bulb selvage lyft dreamcatcher schlitz. Actually sartorial vice, af enamel pin intelligentsia normcore. Tote bag franzen flexitarian, roof party poke offal kombucha
       schlitz vinyl ramps shabby chic salvia. Adaptogen neutra tattooed squid, four loko tbh dreamcatcher activated charcoal bicycle rights lumbersexual live-edge edison bulb. Everyday carry green juice jianbing wayfarers seitan cray.</p>
 
@@ -42,8 +54,8 @@
     <h2>Select your county </h2>
     <form>
       <select id="character"></select>
-      <br><br>
-      <input id="enter" type="submit">
+      <!-- <br><br>
+      <input id="enter" type="submit"> -->
     </form>
 
     <div id="info">
