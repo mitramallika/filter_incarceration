@@ -19,7 +19,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 }
 
 .container {
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     margin: 0 auto;
     display: block;
